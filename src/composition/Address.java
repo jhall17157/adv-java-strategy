@@ -3,11 +3,11 @@ package composition;
 public class Address {
 
     private String streetAddress;
-    private int zipCode;
+    private String zipCode;
     private String state;
     private String phone;
 
-    public Address(String streetAddress, int zipCode, String state, String phone) {
+    public Address(String streetAddress, String zipCode, String state, String phone) {
         this.streetAddress = streetAddress;
         this.zipCode = zipCode;
         this.state = state;
@@ -38,11 +38,11 @@ public class Address {
         this.streetAddress = streetAddress;
     }
 
-    public int getZipCode() {
+    public String getZipCode() {
         return zipCode;
     }
 
-    public void setZipCode(int zipCode) {
+    public void setZipCode(String zipCode) {
         this.zipCode = zipCode;
     }
 }
